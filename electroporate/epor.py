@@ -1,3 +1,5 @@
+#make sure you use floating division -- previous iteration wasrounding division
+
 from Queue import Queue
 import numpy as np
 import serial
@@ -39,9 +41,9 @@ def shock(cue):
 
 # while True:
 
-  time.sleep(1)
+  time.sleep(10)
 
-  for i in range(5):
+  for i in range(7):
              
     print('shock')
     eventcue.put(('write',1))
